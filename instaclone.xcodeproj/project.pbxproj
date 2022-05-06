@@ -27,6 +27,7 @@
 		9C7092FC2823E7C200A2A0C3 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7092FB2823E7C200A2A0C3 /* ProfileHeaderView.swift */; };
 		9C7092FE2824F6E700A2A0C3 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7092FD2824F6E700A2A0C3 /* UserStatView.swift */; };
 		9C7093012824F8A300A2A0C3 /* ProfileActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7093002824F8A300A2A0C3 /* ProfileActionButton.swift */; };
+		9C70930328250B4400A2A0C3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70930228250B4400A2A0C3 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		9C7092FB2823E7C200A2A0C3 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		9C7092FD2824F6E700A2A0C3 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		9C7093002824F8A300A2A0C3 /* ProfileActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButton.swift; sourceTree = "<group>"; };
+		9C70930228250B4400A2A0C3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				9C7092F72823DC9700A2A0C3 /* Extensions.swift */,
+				9C70930228250B4400A2A0C3 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				9C7092F02823BA8200A2A0C3 /* PostGridView.swift in Sources */,
 				9C7092BE28238CF500A2A0C3 /* instacloneApp.swift in Sources */,
 				9C7092D22823904900A2A0C3 /* ContentView.swift in Sources */,
+				9C70930328250B4400A2A0C3 /* ImagePicker.swift in Sources */,
 				9C7092E0282391E300A2A0C3 /* MainTabView.swift in Sources */,
 				9C7092FC2823E7C200A2A0C3 /* ProfileHeaderView.swift in Sources */,
 				9C7092EA282392BF00A2A0C3 /* UploadPostView.swift in Sources */,
