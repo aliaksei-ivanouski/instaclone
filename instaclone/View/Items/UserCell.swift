@@ -9,7 +9,23 @@ import SwiftUI
 
 struct UserCell: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image("sea_feed")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 48, height: 48)
+                .clipShape(Circle())
+            
+            VStack(alignment: .leading) {
+                Text("batman")
+                    .font(.system(size: 14, weight: .semibold))
+                
+                Text("Jeff Stone")
+                    .font(.system(size: 14))
+            }
+            
+            Spacer()
+        }
     }
 }
 
