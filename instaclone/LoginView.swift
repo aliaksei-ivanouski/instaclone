@@ -71,7 +71,8 @@ struct LoginView: View {
                             .font(.system(size: 14))
                         
                         NavigationLink(
-                            destination: RegistrationView(),
+                            destination: RegistrationView()
+                                .navigationBarHidden(true),
                             label: {
                                 Text("Sign Up")
                                     .font(.system(size: 14, weight: .semibold))
