@@ -12,6 +12,9 @@ struct RegistrationView: View {
     @State private var username = ""
     @State private var fullName = ""
     @State private var password = ""
+    @State private var selectedImage: UIImage?
+    @State private var image: Image?
+    @State var imagePickerPresented = false
     @Environment(\.presentationMode) var mode
     
     var body: some View {
@@ -20,15 +23,30 @@ struct RegistrationView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Button(action: {}, label: {
-                    Image("plus_circle")
-                        .renderingMode(.template)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 140, height: 140)
-                        .foregroundColor(.white)
-                })
-                .padding()
+                
+                ZStack {
+                    if let image = image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 140, height: 140)
+                            .clipShape(Circle())
+                    } else {
+                        Button(action: { imagePickerPresented.toggle() }, label: {
+                            Image("plus_circle")
+                                .renderingMode(.template)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 140, height: 140)
+                                .foregroundColor(.white)
+                        })
+                        .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                            ImagePicker(image: $selectedImage)
+                        })
+                    }
+                }
+                .padding(.top, 44)
+                .padding(.bottom, 20)
                 
                 VStack(spacing: 20) {
                     CustomTextField(text: $email, placeholder: Text("email..."), imageName: "envelope")
@@ -89,6 +107,13 @@ struct RegistrationView: View {
                 .padding(.bottom, 16)
             }
         }
+    }
+}
+
+extension RegistrationView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        image = Image(uiImage: selectedImage)
     }
 }
 
