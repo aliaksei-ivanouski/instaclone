@@ -40,6 +40,9 @@
 		9C70933A28264A1000A2A0C3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9C70933928264A1000A2A0C3 /* FirebaseMessaging */; };
 		9C70933C28264A1000A2A0C3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9C70933B28264A1000A2A0C3 /* FirebaseStorage */; };
 		9C70933F28264ACB00A2A0C3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9C70933E28264ACB00A2A0C3 /* Kingfisher */; };
+		9CCA091828265CB0003C7214 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA091728265CB0003C7214 /* AuthViewModel.swift */; };
+		9CCA091A28265CEF003C7214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CCA091928265CEF003C7214 /* GoogleService-Info.plist */; };
+		9CD361CD28278CEC00EC0C78 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD361CC28278CEC00EC0C78 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,9 @@
 		9C70932D282537B600A2A0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9C70932E282539AB00A2A0C3 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		9C709330282539B900A2A0C3 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		9CCA091728265CB0003C7214 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		9CCA091928265CEF003C7214 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CD361CC28278CEC00EC0C78 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				9C70932D282537B600A2A0C3 /* Info.plist */,
+				9CCA091928265CEF003C7214 /* GoogleService-Info.plist */,
 				9C7093242825366900A2A0C3 /* fonts */,
 				9C7092CF28238FA200A2A0C3 /* Model */,
 				9C7092CE28238F9F00A2A0C3 /* View */,
@@ -146,6 +153,7 @@
 		9C7092CC28238F9800A2A0C3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				9CD361CC28278CEC00EC0C78 /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 		9C7092DD2823913E00A2A0C3 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				9CCA091728265CB0003C7214 /* AuthViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -373,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C7092C528238CF700A2A0C3 /* Preview Assets.xcassets in Resources */,
+				9CCA091A28265CEF003C7214 /* GoogleService-Info.plist in Resources */,
 				9C7092C228238CF700A2A0C3 /* Assets.xcassets in Resources */,
 				9C70932C282537A500A2A0C3 /* KaushanScript-Regular.ttf in Resources */,
 			);
@@ -390,6 +400,7 @@
 				9C7092E22823923300A2A0C3 /* FeedView.swift in Sources */,
 				9C7093282825371D00A2A0C3 /* ResetPasswordView.swift in Sources */,
 				9C70932F282539AB00A2A0C3 /* CustomTextField.swift in Sources */,
+				9CD361CD28278CEC00EC0C78 /* ImageUploader.swift in Sources */,
 				9C7093012824F8A300A2A0C3 /* ProfileActionButton.swift in Sources */,
 				9C7092F02823BA8200A2A0C3 /* PostGridView.swift in Sources */,
 				9C7092BE28238CF500A2A0C3 /* instacloneApp.swift in Sources */,
@@ -405,6 +416,7 @@
 				9C7092EE2823B6C300A2A0C3 /* SearchBar.swift in Sources */,
 				9C7092E62823928700A2A0C3 /* NotificationsView.swift in Sources */,
 				9C7092EC2823A03E00A2A0C3 /* FeedCell.swift in Sources */,
+				9CCA091828265CB0003C7214 /* AuthViewModel.swift in Sources */,
 				9C7092F42823BCDA00A2A0C3 /* UserListView.swift in Sources */,
 				9C7092FA2823E3E200A2A0C3 /* NotificationCell.swift in Sources */,
 				9C7093262825369B00A2A0C3 /* LoginView.swift in Sources */,

@@ -16,6 +16,7 @@ struct RegistrationView: View {
     @State private var image: Image?
     @State var imagePickerPresented = false
     @Environment(\.presentationMode) var mode
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         ZStack {
@@ -56,14 +57,14 @@ struct RegistrationView: View {
                         .foregroundColor(.white)
                         .padding(.horizontal, 32)
                     
-                    CustomTextField(text: $email, placeholder: Text("username..."), imageName: "person")
+                    CustomTextField(text: $username, placeholder: Text("username..."), imageName: "person")
                         .padding()
                         .background(Color(.init(white: 1, alpha: 0.15)))
                         .cornerRadius(10)
                         .foregroundColor(.white)
                         .padding(.horizontal, 32)
                     
-                    CustomTextField(text: $email, placeholder: Text("full name..."), imageName: "person")
+                    CustomTextField(text: $fullName, placeholder: Text("full name..."), imageName: "person")
                         .padding()
                         .background(Color(.init(white: 1, alpha: 0.15)))
                         .cornerRadius(10)
@@ -79,19 +80,21 @@ struct RegistrationView: View {
                 }
                 
                 Button(
-                    action: {}, label: {
-                    Text("Sign Up")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .frame(width: 360, height: 50)
-                        .background(.purple)
-                        .clipShape(Capsule())
-                        .padding()
-                })
+                    action: {
+                        viewModel.register(withEmail: email, password: password, image: selectedImage, fullName: fullName, username: username)
+                    }, label: {
+                        Text("Sign Up")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(width: 360, height: 50)
+                            .background(.purple)
+                            .clipShape(Capsule())
+                            .padding()
+                    })
                 
                 Spacer()
                 
-            
+                
                 
                 HStack {
                     Text("Already have an accont?")
