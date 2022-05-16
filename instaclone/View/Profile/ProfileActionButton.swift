@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileActionButton: View {
-    var isCurrentUser = false
+    let isCurrentUser: Bool
     var isFollowed = false
     
     var body: some View {
@@ -50,11 +50,5 @@ struct ProfileActionButton: View {
                 })
             }
         }
-    }
-}
-
-struct ProfileActionButton_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileActionButton()
     }
 }
