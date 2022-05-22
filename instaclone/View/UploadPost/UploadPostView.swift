@@ -12,6 +12,7 @@ struct UploadPostView: View {
     @State var postImage: Image?
     @State var captionText = ""
     @State var imagePickerPresented = false
+    @ObservedObject var viewModel = UploadPostViewModel()
     
     var body: some View {
         VStack {
@@ -43,7 +44,11 @@ struct UploadPostView: View {
                 }
                 .padding()
                 
-                Button(action: {}, label: {
+                Button(action: {
+                    if let image = selectedImage {
+                        viewModel.uploadPost(caption: captionText, image: image)
+                    }
+                }, label: {
                     Text("Share")
                         .font(.system(size: 16, weight: .semibold))
                         .frame(width: 360, height: 50)
@@ -63,11 +68,5 @@ extension UploadPostView {
     func loadImage() {
         guard let selectedImage = selectedImage else { return }
         postImage = Image(uiImage: selectedImage)
-    }
-}
-
-struct UploadPostView_Previews: PreviewProvider {
-    static var previews: some View {
-        UploadPostView()
     }
 }
