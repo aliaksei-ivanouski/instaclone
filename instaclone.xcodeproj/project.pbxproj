@@ -13,6 +13,7 @@
 		9C195B36283A32E600C64CA4 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C195B35283A32E600C64CA4 /* TextArea.swift */; };
 		9C195B39283A7EC200C64CA4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C195B38283A7EC200C64CA4 /* Post.swift */; };
 		9C195B3B283A801700C64CA4 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C195B3A283A801700C64CA4 /* FeedViewModel.swift */; };
+		9C195B3D283A8FF700C64CA4 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C195B3C283A8FF700C64CA4 /* PostGridViewModel.swift */; };
 		9C7092BE28238CF500A2A0C3 /* instacloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7092BD28238CF500A2A0C3 /* instacloneApp.swift */; };
 		9C7092C228238CF700A2A0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7092C128238CF700A2A0C3 /* Assets.xcassets */; };
 		9C7092C528238CF700A2A0C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7092C428238CF700A2A0C3 /* Preview Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		9C195B35283A32E600C64CA4 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		9C195B38283A7EC200C64CA4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		9C195B3A283A801700C64CA4 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		9C195B3C283A8FF700C64CA4 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 		9C7092BA28238CF500A2A0C3 /* instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7092BD28238CF500A2A0C3 /* instacloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instacloneApp.swift; sourceTree = "<group>"; };
 		9C7092C128238CF700A2A0C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				9C7092DB2823912D00A2A0C3 /* Feed */,
 				9CB6DA9F283283A900356E00 /* SearchViewModel.swift */,
 				9C195B33283A25EB00C64CA4 /* UploadPostViewModel.swift */,
+				9C195B3C283A8FF700C64CA4 /* PostGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				9C7093012824F8A300A2A0C3 /* ProfileActionButton.swift in Sources */,
 				9C7092F02823BA8200A2A0C3 /* PostGridView.swift in Sources */,
 				9C7092BE28238CF500A2A0C3 /* instacloneApp.swift in Sources */,
+				9C195B3D283A8FF700C64CA4 /* PostGridViewModel.swift in Sources */,
 				9C7092D22823904900A2A0C3 /* ContentView.swift in Sources */,
 				9C70930328250B4400A2A0C3 /* ImagePicker.swift in Sources */,
 				9C195B34283A25EB00C64CA4 /* UploadPostViewModel.swift in Sources */,
