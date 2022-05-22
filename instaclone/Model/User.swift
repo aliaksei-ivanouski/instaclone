@@ -13,6 +13,7 @@ struct User: Identifiable, Decodable {
     let fullName: String
     let profileImageUrl: String
     let email: String
+    var isFollowed: Bool? = false
     
     var isCurrentUser: Bool {
         return AuthViewModel.shared.userSession?.uid == id
