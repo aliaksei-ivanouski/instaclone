@@ -6,26 +6,29 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FeedCell: View {
+    let post: Post
+    
     var body: some View {
         VStack(alignment: .leading) {
             //user info
             HStack {
-                Image("sea_feed")
+                KFImage(URL(string: post.ownerImageUrl))
                     .resizable()
                     .scaledToFill()
                     .frame(width: 36, height: 36)
                     .clipped()
                     .cornerRadius(18)
                 
-                Text("joker")
+                Text(post.ownerUsername)
                     .font(.system(size: 14, weight: .semibold))
             }
             .padding([.leading, .bottom], 8)
             
             //post image
-            Image("nas_feed")
+            KFImage(URL(string: post.imageUrl))
                 .resizable()
                 .scaledToFit()
                 .frame(maxHeight: 440)
@@ -62,15 +65,15 @@ struct FeedCell: View {
             .foregroundColor(.black)
             
             //caption
-            Text("3 likes")
+            Text("\(post.likes) \(post.likes == 1 ? "like" : "likes")")
                 .font(.system(size: 14, weight: .semibold))
                 .padding(.leading, 8)
                 .padding(.bottom, 2)
             
             HStack {
-                Text("gift")
+                Text(post.ownerUsername)
                     .font(.system(size: 14, weight: .semibold)) +
-                Text(" All men have limits. They learn what they are and learn not to exeed them. I ignore mine.")
+                Text(" \(post.caption)")
                     .font(.system(size: 15))
             }
             .padding(.horizontal, 8)
@@ -82,11 +85,5 @@ struct FeedCell: View {
                 .padding(.top, 2)
         }
         .padding([.leading, .trailing], 8)
-    }
-}
-
-struct FeedCell_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedCell()
     }
 }
