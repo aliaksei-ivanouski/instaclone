@@ -54,7 +54,7 @@ class AuthViewModel: ObservableObject {
                     "profileImageUrl": imageUrl
                 ]
                 
-                COLLECTION_USER.document(user.uid).setData(data) { _ in
+                COLLECTION_USERS.document(user.uid).setData(data) { _ in
                     self.userSession = user
                     self.fetchUser()
                 }
@@ -73,7 +73,7 @@ class AuthViewModel: ObservableObject {
     
     func fetchUser() {
         guard let uid = userSession?.uid else { return }
-        COLLECTION_USER.document(uid).getDocument { snapshot, _ in
+        COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
             guard let user = try? snapshot?.data(as: User.self) else { return }
             self.currentUser = user
         }
