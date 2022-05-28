@@ -54,6 +54,7 @@
 		9CCA091828265CB0003C7214 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA091728265CB0003C7214 /* AuthViewModel.swift */; };
 		9CCA091A28265CEF003C7214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CCA091928265CEF003C7214 /* GoogleService-Info.plist */; };
 		9CD361CD28278CEC00EC0C78 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD361CC28278CEC00EC0C78 /* ImageUploader.swift */; };
+		9CF574FA2841F69900FDFC36 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF574F92841F69900FDFC36 /* FeedCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		9CCA091728265CB0003C7214 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		9CCA091928265CEF003C7214 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9CD361CC28278CEC00EC0C78 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		9CF574F92841F69900FDFC36 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				9C195B3A283A801700C64CA4 /* FeedViewModel.swift */,
+				9CF574F92841F69900FDFC36 /* FeedCellViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				9C7092FE2824F6E700A2A0C3 /* UserStatView.swift in Sources */,
 				9C7092E8282392A700A2A0C3 /* ProfileView.swift in Sources */,
 				9C709331282539B900A2A0C3 /* CustomSecureField.swift in Sources */,
+				9CF574FA2841F69900FDFC36 /* FeedCellViewModel.swift in Sources */,
 				9C195B39283A7EC200C64CA4 /* Post.swift in Sources */,
 				9CB6DAA0283283AA00356E00 /* SearchViewModel.swift in Sources */,
 				9C7092EE2823B6C300A2A0C3 /* SearchBar.swift in Sources */,
