@@ -14,8 +14,15 @@ struct User: Identifiable, Decodable {
     let profileImageUrl: String
     let email: String
     var isFollowed: Bool? = false
+    var stats: UserStats?
     
     var isCurrentUser: Bool {
         return AuthViewModel.shared.userSession?.uid == id
     }
+}
+
+struct UserStats: Decodable {
+    let following: Int
+    let posts: Int
+    let followers: Int
 }
