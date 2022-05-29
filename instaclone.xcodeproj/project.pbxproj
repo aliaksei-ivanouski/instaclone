@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C02EABD28432F6E00D2C026 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C02EABC28432F6E00D2C026 /* Notification.swift */; };
 		9C195B302839FE1A00C64CA4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C195B2F2839FE1A00C64CA4 /* ProfileViewModel.swift */; };
 		9C195B32283A0B4500C64CA4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C195B31283A0B4500C64CA4 /* UserService.swift */; };
 		9C195B34283A25EB00C64CA4 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C195B33283A25EB00C64CA4 /* UploadPostViewModel.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C02EABC28432F6E00D2C026 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		9C195B2F2839FE1A00C64CA4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		9C195B31283A0B4500C64CA4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		9C195B33283A25EB00C64CA4 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				9CB6DA82283251DB00356E00 /* User.swift */,
 				9C195B38283A7EC200C64CA4 /* Post.swift */,
 				9CF574FB284209B200FDFC36 /* Comment.swift */,
+				9C02EABC28432F6E00D2C026 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				9C7092F42823BCDA00A2A0C3 /* UserListView.swift in Sources */,
 				9C7092FA2823E3E200A2A0C3 /* NotificationCell.swift in Sources */,
 				9C7093262825369B00A2A0C3 /* LoginView.swift in Sources */,
+				9C02EABD28432F6E00D2C026 /* Notification.swift in Sources */,
 				9CF574FC284209B200FDFC36 /* Comment.swift in Sources */,
 				9C7092F82823DC9700A2A0C3 /* Extensions.swift in Sources */,
 				9CB6DA8128324F6900356E00 /* Constants.swift in Sources */,
