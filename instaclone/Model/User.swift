@@ -15,6 +15,7 @@ struct User: Identifiable, Decodable {
     let email: String
     var isFollowed: Bool? = false
     var stats: UserStats?
+    var bio: String?
     
     var isCurrentUser: Bool {
         return AuthViewModel.shared.userSession?.uid == id

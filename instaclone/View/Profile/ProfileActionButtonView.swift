@@ -10,10 +10,13 @@ import SwiftUI
 struct ProfileActionButtonView: View {
     @ObservedObject var viewModel: ProfileViewModel
     var isFollowed: Bool { return viewModel.user.isFollowed ?? false }
+    @State var showEditProfile = false
     
     var body: some View {
         if viewModel.user.isCurrentUser {
-            Button(action: {}, label: {
+            Button(action: {
+                showEditProfile.toggle()
+            }, label: {
                 Text("Edit profile")
                     .font(.system(size: 14, weight: .semibold))
                     .frame(width: 360, height: 32)
@@ -23,6 +26,9 @@ struct ProfileActionButtonView: View {
                             .stroke(Color.gray, lineWidth: 1)
                     )
             })
+            .sheet(isPresented: $showEditProfile) {
+                EditProfileView(user: $viewModel.user)
+            }
         } else {
             HStack {
                 Button(action: { isFollowed ? viewModel.unfollow() : viewModel.follow() }, label: {
