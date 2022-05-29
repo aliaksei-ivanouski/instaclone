@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditProfileView: View {
-    @State private var bioText = ""
+    @State private var bioText: String
     @Binding var user: User
     @ObservedObject private var viewModel: EditProfileViewModel
     @Environment(\.presentationMode) var mode
@@ -16,6 +16,7 @@ struct EditProfileView: View {
     init(user: Binding<User>) {
         self._user = user
         self.viewModel = EditProfileViewModel(user: self._user.wrappedValue)
+        self._bioText = State(initialValue: _user.wrappedValue.bio ?? "")
     }
     
     var body: some View {
