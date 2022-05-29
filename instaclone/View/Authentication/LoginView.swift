@@ -44,13 +44,16 @@ struct LoginView: View {
                     HStack {
                         Spacer()
                         
-                        Button(action: {}, label: {
+                        NavigationLink {
+                            ResetPasswordView(email: $email)
+                        } label: {
                             Text("Forgot password?")
                                 .font(.system(size: 13, weight: .semibold))
                                 .foregroundColor(.white)
                                 .padding(.top)
                                 .padding(.trailing, 28)
-                        })
+                        }
+
                     }
                     
                     Button(action: {
@@ -87,11 +90,5 @@ struct LoginView: View {
                 .padding(.top, -44)
             }
         }
-    }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
     }
 }
