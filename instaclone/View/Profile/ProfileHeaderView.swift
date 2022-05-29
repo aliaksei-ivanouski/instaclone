@@ -43,7 +43,7 @@ struct ProfileHeaderView: View {
             HStack {
                 Spacer()
                 
-                ProfileActionButton(viewModel: viewModel)
+                ProfileActionButtonView(viewModel: viewModel)
                 
                 Spacer()
             }
