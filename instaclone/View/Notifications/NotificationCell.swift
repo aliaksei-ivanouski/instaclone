@@ -30,10 +30,15 @@ struct NotificationCell: View {
                         .frame(width: 40, height: 40)
                         .clipShape(Circle())
                     
-                    Text(viewModel.notification.username)
-                        .font(.system(size: 14, weight: .semibold)) +
-                    Text(viewModel.notification.type.notificationMessage)
-                        .font(.system(size: 15))
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text(viewModel.notification.username)
+                            .font(.system(size: 14, weight: .semibold))
+                        Text(viewModel.notification.type.notificationMessage)
+                            .font(.system(size: 14)) +
+                        Text(" \(viewModel.timestampString)")
+                            .foregroundColor(.gray)
+                            .font(.system(size: 12))
+                    }
                 }
             }
             

@@ -23,7 +23,7 @@ struct CommentsCell: View {
             
             Spacer()
             
-            Text("2d")
+            Text(" \(comment.timestampString)")
                 .foregroundColor(.gray)
                 .font(.system(size: 12))
                 .padding(.trailing)
